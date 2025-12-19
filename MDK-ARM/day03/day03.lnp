@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"day03\startup_stm32f103xb.o"
+"day03\uart.o"
+"day03\main.o"
+"day03\gpio.o"
+"day03\dma.o"
+"day03\usart.o"
+"day03\stm32f1xx_it.o"
+"day03\stm32f1xx_hal_msp.o"
+"day03\stm32f1xx_hal_gpio_ex.o"
+"day03\stm32f1xx_hal_tim.o"
+"day03\stm32f1xx_hal_tim_ex.o"
+"day03\stm32f1xx_hal_uart.o"
+"day03\stm32f1xx_hal.o"
+"day03\stm32f1xx_hal_rcc.o"
+"day03\stm32f1xx_hal_rcc_ex.o"
+"day03\stm32f1xx_hal_gpio.o"
+"day03\stm32f1xx_hal_dma.o"
+"day03\stm32f1xx_hal_cortex.o"
+"day03\stm32f1xx_hal_pwr.o"
+"day03\stm32f1xx_hal_flash.o"
+"day03\stm32f1xx_hal_flash_ex.o"
+"day03\stm32f1xx_hal_exti.o"
+"day03\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "day03\day03.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "day03.map" -o day03\day03.axf
